@@ -1,38 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
+        a {
+            margin: 0 10px;
+            border-radius: 50px;
+            box-sizing: border-box;
+            background: #fff;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition: 0.5s;
+            background: rgba(0, 0, 0, 0);
+            color: var(--color);
+            font-size: 2.5rem;
+            -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+        }
+
+        a:hover {
+            background: var(--color);
+            color: #050801;
+            box-shadow: 0 0 5px var(--color),
+                        0 0 25px var(--color),
+                        0 0 50px var(--color),
+                        0 0 200px var(--color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 50px 50px 50px 50px;
+            gap: 50px;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        body {
+            background-color: #000;
+            color: #000;
+        }
+        .content {
+            display: block;
+        }
+
+    </style>
+</head>
 <body>
-    <div class="middle">
-        <a class="btn" href="#">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a class="btn" href="#">
-            <i class="fab fa-wordpress"></i>
-        </a>
-        <a class="btn" href="#">
-            <i class="fab fa-github"></i>
-        </a>
-        <a class="btn" href="#">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a class="btn" href="#">
-            <i class="fab fa-youtube"></i>
-            <a class="btn" href="#">
-                <i class="fas fa-coffee"></i>
-            </a>
+    <div class="content">
+        
+
+    </div>
+
+
+    <div class="codetheworld-io">
+        <ul class="grid">
+            <li>
+                <a href="#" style="--color: #0072b1">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" style="--color: #E1306C">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" style="--color: #FF0050">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" style="--color: #4267B2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+        </ul>
     </div>
 </body>
-
 </html>
-
-
-<!-- th3hydr4-->
-
-<!-- fonte dos icones www.fontawesome.com-->
